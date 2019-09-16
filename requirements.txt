@@ -1,0 +1,6 @@
+numpy
+matplotlib
+plotly
+bqplot
+pyqtgraph
+ipyvolume
