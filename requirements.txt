@@ -4,3 +4,4 @@ plotly
 bqplot
 pyqtgraph
 ipyvolume
+bokeh
