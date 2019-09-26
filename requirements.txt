@@ -5,4 +5,4 @@ bqplot
 pyqtgraph
 ipyvolume
 bokeh
-pyside
+holoviz
