@@ -8,13 +8,13 @@ We explored the Python data visualization ecosystem by selecting the most common
 
 Our findings are best represented as a ranked list:
 
-1. [`plotly`](report.ipynb#plotly): best use case coverage (including 3D), excellent interactivity, great performance, has a `Dash` platform for creating in-browser apps. Coupling with `Datashader` could be a winner.
+1. [`matplotlib (+ipyvolume)`](report.ipynb#matplotlib): `matplotlib` is the most mature and well-established project, with the largest community/user base, and great case coverage. Interaction with Jupyter widgets works well. However, 3D performance is poor, and it should be coupled to a 3D-specific library (we found `ipyvolume` to be a very good candidate).
 
 
-2. [`HoloViz`](report.ipynb#holoviz): very similar to `plotly` in case coverage, very high performance (especially via the `Datashader` method), makes interactions much easier to implement than `bokeh`, also has a `Panels` utility for apps, but is a young project that still feels scattered over different sub-projects, not as unified as `plotly`.
+2. [`plotly`](report.ipynb#plotly): best use case coverage (including 3D), excellent interactivity, great performance, has a `Dash` platform for creating in-browser apps. It could benefit from some `Datashader`-like functionality for large datasets. Performance is however poor when back-and-forth communication is required between the plot and the Jupyter Kernel, as is the case for slider widgets, for example.
 
 
-3. [`matplotlib`](report.ipynb#matplotlib): most mature and well-established project, largest community/user base, great case coverage, but 3D performance is poor, and setting up interactions is cumbersome. Should be complemented by a 3D-specific library (`ipyvolume` is a good candidate).
+3. [`HoloViz`](report.ipynb#holoviz): very similar to `plotly` in case coverage, very high performance (especially via the `Datashader` method), makes interactions much easier to implement than `bokeh`, also has a `Panels` utility for apps, but is a young project that still feels scattered over different sub-projects, not as unified as `plotly`.
 
 
 4. [`bokeh`](report.ipynb#bokeh): good case coverage, many interactions possibilities, but lacking 3D visualization, and interactions with buttons/sliders must be implemented in javascript.
